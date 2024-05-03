@@ -33,12 +33,12 @@ function Projects() {
         // </>
         <div className='projects'>
             <h1 className='text-gradient'>Projects</h1>
-            {loading ? <>
+            {loading ? <div className='mt-6'>
                 <div className="shimmerBG content-line"></div>
                 <div className="shimmerBG content-line"></div>
                 <div className="shimmerBG content-line"></div>
                 <div className="shimmerBG content-line"></div>
-            </> :
+            </div> :
                 <>
                     <div className='grid'>
                         {repos.map((repo: any) =>
