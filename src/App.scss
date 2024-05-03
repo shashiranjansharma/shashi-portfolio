@@ -1,0 +1,158 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+    nav {
+        position: absolute;
+        min-height: 100vh;
+        right: 3rem;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+
+        .social-links {
+            padding: 2rem 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 7rem;
+            background-color: #2f2e43;
+            vertical-align: middle;
+            border-radius: 0.8rem;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    gap: 2rem;
+
+    a {
+        padding: 1rem;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        color: #fff;
+        transition: all 0.3s;
+
+        img {
+            color: #fff;
+        }
+
+        &:hover,
+        &.active {
+            background: linear-gradient(to right, #ef4444, #55537c);
+            transform: scale(1.2);
+        }
+    }
+}
+
+// -primary: #ef4444;
+.text-gradient {
+    background: linear-gradient(to right, #ef4444, #55537c);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    padding: 1rem 1.5rem;
+    border: none;
+    background-color: #2f2e43;
+    border-radius: 0.4rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #ef4444;
+    }
+}
+
+.mt-3 {
+    margin-top: 0.6rem;
+}
+
+.mt-6 {
+    margin-top: 1.2rem;
+}
+
+.home {
+    height: 100vh;
+    overflow: hidden;
+    padding: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-left,
+    &-right {
+        width: 50%;
+        min-width: 4rem;
+
+        img {
+            height: 50rem;
+            width: auto;
+        }
+    }
+
+    &-left {
+        padding: 10rem 0;
+
+        .social-links {
+            width: 40%;
+            margin: 3rem 0 2rem;
+
+            img {
+                width: 2rem;
+                color: #fff;
+            }
+        }
+
+        h3 {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+            font-weight: normal;
+        }
+    }
+
+    .download-btn {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.8rem;
+
+        svg {
+            color: #fff;
+            margin-right: 0.5rem;
+        }
+    }
+}

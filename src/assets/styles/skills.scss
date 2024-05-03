@@ -1,0 +1,46 @@
+.skills {
+    text-align: center;
+    padding: 10rem 15rem;
+    height: 100vh;
+    overflow-y: auto;
+
+    img {
+        width: 40rem;
+        margin: 5rem 0;
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 15rem;
+    }
+
+    &-item {
+        width: 18rem;
+        height: 15rem;
+        border-radius: 0.8rem;
+        background-color: #2d2d36;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+
+        .icon {
+            width: 10rem;
+            height: 10rem;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        h4 {
+            font-size: 1.4rem;
+        }
+
+        &:hover {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+}
