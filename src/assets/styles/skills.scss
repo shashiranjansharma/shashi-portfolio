@@ -4,6 +4,34 @@
     height: 100vh;
     overflow-y: auto;
 
+    @media only screen and (max-width: 600px) {
+        padding: 3rem;
+
+        img {
+            width: 20rem !important;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+        }
+
+        &-list {
+            gap: 1rem !important;
+            margin-bottom: 17rem;
+        }
+
+        &-item {
+            width: 10rem !important;
+            height: 8rem !important;
+
+            .icon {
+                width: 5rem !important;
+                height: 5rem !important;
+            }
+        }
+    }
+
+
     img {
         width: 40rem;
         margin: 5rem 0;

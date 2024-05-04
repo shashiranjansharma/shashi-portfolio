@@ -4,6 +4,21 @@
     height: 100vh;
     overflow-y: auto;
 
+    @media only screen and (max-width: 600px) {
+        padding: 3rem;
+
+        .desc {
+            padding: 1rem 1.6rem !important;
+            margin-top: 5rem;
+            margin-bottom: 15rem;
+            border-radius: 5rem !important;
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+
     .desc {
         display: flex;
         background-color: #F6F6F6;

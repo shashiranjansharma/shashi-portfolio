@@ -4,6 +4,7 @@ import linkedin from '../assets/svg/linkedin.svg';
 import github from '../assets/svg/github.svg';
 import codepen from '../assets/svg/codepen.svg';
 import email from '../assets/svg/email.svg';
+import namaste from '../assets/svg/namaste.svg';
 import resume from '../assets/shashiranjan.pdf';
 
 function Home() {
@@ -33,7 +34,7 @@ function Home() {
         <div className='home'>
             <div className='home-left'>
                 <section>
-                    <h2>Namatey</h2>
+                    <img src={namaste} alt='namaste' className='namsate' />
                     <h1>
                         <span>I am </span>
                         <span className='text-gradient'>Shashi Ranjan</span>

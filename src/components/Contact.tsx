@@ -27,7 +27,7 @@ function Contact() {
             <h4>Give me a call on +91-9852041771 or send us an email at <a href='mailto:shashiranjansharma@live.in' className='text-gradient'>shashiranjansharma@live.in</a></h4>
             <div className='social'>
                 <div className='social-head text-gradient'>
-                    Stalk Me
+                    Follow me
                 </div>
                 <div className='social-links'>
                     {SOCIAL_LINKS.map((item) =>
