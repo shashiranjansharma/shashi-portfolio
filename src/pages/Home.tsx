@@ -48,7 +48,7 @@ const Home: React.FC = () => {
             View Projects <FaArrowRight className="ml-2 h-5 w-5" />
           </Link>
           <a
-            href="/updatedResume.pdf" // Ensure resume is in public folder
+            href="/shashiaranjankumar_senior_frontend_engineer.pdf" // Ensure resume is in public folder
             download="Shashi_Ranjan_Kumar_Resume.pdf"
             className="bg-background-dark hover:bg-gray-700 text-text-light font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 flex items-center justify-center border border-primary/50"
           >

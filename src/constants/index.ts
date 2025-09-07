@@ -31,11 +31,11 @@ export const quotes = [
 ];
 
 export const projectData: Project[] = [
-    { title: 'Threat Defender Collaboration Network', description: 'Developed key UI workflows for sharing rules, analytics, and files within a cyber threat defense network using Vue 3.', techStack: ['Vue 3', 'JavaScript', 'REST API', 'Cybersecurity'], projectUrl: '../../public/tdl.svg' },
-    { title: 'Intelligence Requirement Sharing Platform', description: 'Implemented UI features for a Requirements-Driven Threat Intelligence Lifecycle, enhancing collaboration among security teams.', techStack: ['Vue 3', 'Pinia/Vuex', 'JavaScript', 'UI/UX'], projectUrl: '../../public/ir.svg' },
-    { title: 'In-House Vue.js UI Library', description: 'Contributed to the development and maintenance of a reusable component library in Vue.js to standardize UI elements across applications.', techStack: ['Vue Js', 'Component Library', 'CSS/SCSS', 'Collaboration'], projectUrl: '../../public/storybook.png' },
-    { title: '99tests Platform UI Enhancements', description: 'Built and improved user interfaces for the 99tests platform using AngularJS, focusing on user experience and interactivity.', techStack: ['AngularJS', 'JavaScript', 'HTML', 'CSS', 'Testing Platform'], projectUrl: '../../public/99test.webp' },
-    { title: 'Portfolio Website (This Site)', description: 'Personal portfolio website built with React, TypeScript, Tailwind CSS, and Vite to showcase skills and experience.', techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router'], projectUrl: '../../public/port.png' }, // Update link
+    { title: 'Threat Defender Collaboration Network', description: 'Developed key UI workflows for sharing rules, analytics, and files within a cyber threat defense network using Vue 3.', techStack: ['Vue 3', 'JavaScript', 'REST API', 'Cybersecurity'], projectUrl: '/tdl.svg' },
+    { title: 'Intelligence Requirement Sharing Platform', description: 'Implemented UI features for a Requirements-Driven Threat Intelligence Lifecycle, enhancing collaboration among security teams.', techStack: ['Vue 3', 'Pinia/Vuex', 'JavaScript', 'UI/UX'], projectUrl: '/ir.svg' },
+    { title: 'In-House Vue.js UI Library', description: 'Contributed to the development and maintenance of a reusable component library in Vue.js to standardize UI elements across applications.', techStack: ['Vue Js', 'Component Library', 'CSS/SCSS', 'Collaboration'], projectUrl: '/storybook.png' },
+    { title: '99tests Platform UI Enhancements', description: 'Built and improved user interfaces for the 99tests platform using AngularJS, focusing on user experience and interactivity.', techStack: ['AngularJS', 'JavaScript', 'HTML', 'CSS', 'Testing Platform'], projectUrl: '/99test.webp' },
+    { title: 'Portfolio Website (This Site)', description: 'Personal portfolio website built with React, TypeScript, Tailwind CSS, and Vite to showcase skills and experience.', techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router'], projectUrl: '/port.png' }, // Update link
 ];
 
 // Define type for project data
