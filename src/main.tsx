@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
-import './index.scss';
-import { BrowserRouter } from 'react-router-dom';
+import App from './App.tsx'; // Updated import
+import './index.css';
 
+// Non-null assertion assuming 'root' element always exists
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <App />
   </React.StrictMode>,
 );

@@ -1,0 +1,185 @@
+.content-container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.gradient-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.noise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: 5;
+
+}
+
+@keyframes float-1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(10%, 10%) scale(1.1);
+  }
+}
+
+@keyframes float-2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(-10%, -5%) scale(1.15);
+  }
+}
+
+@keyframes float-3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translate(-5%, 10%) scale(1.05);
+    opacity: 0.6;
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card-layout {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 250px;
+  padding-bottom: 20px;
+}
+
+.card-layout::before,
+.card-layout::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff6b6b;
+  transition: all 0.5s ease;
+}
+
+.card-layout::before {
+  top: 0;
+  left: 0;
+}
+
+.card-layout::after {
+  bottom: 0;
+  right: 0;
+}
+
+.card-layout:hover::before,
+.card-layout:hover::after {
+  width: 100%;
+}
+
+.card-layout:hover::before {
+  height: 100%;
+  width: 2px;
+  transition: width 0.5s ease, height 0.5s ease 0.5s;
+}
+
+.card:hover::after {
+  height: 100%;
+  width: 2px;
+  transition: width 0.5s ease, height 0.5s ease 0.5s;
+}
+
+.rotating-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: repeating-conic-gradient(from var(--a), #0c228c 0%, #0a1f97 5%, transparent 5%, transparent 40%, #06044b 50%);
+  animation: animate 4s linear infinite;
+  border-radius: 15px;
+}
+
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+
+  100% {
+    --a: 360deg;
+  }
+}
+
+.rotating-box::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(from var(--a), #0a0b5f 0%, #140b5b 5%, transparent 5%, transparent 40%, #0c145f 50%);
+  animation: animate 4s linear infinite;
+  animation-delay: -1s;
+  border-radius: 15px;
+}
+
+.rotating-box::after {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  background: #2d2d39;
+  border-radius: 15px;
+  border: 8px solid #25252b;
+}

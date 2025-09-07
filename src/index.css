@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-carousel {
+  animation: carousel 25s linear infinite;
+}
+
+
+body {
+  @apply transition-colors duration-300;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.background.dark');
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme('colors.primary.DEFAULT');
+  border-radius: 10px;
+  border: 2px solid theme('colors.background.dark');
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: theme('colors.primary.light');
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  35% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fade-slide {
+  animation: fadeSlide 24s infinite;
+}
+
+.animate-fade-carousel>div {
+  animation-fill-mode: forwards;
+}

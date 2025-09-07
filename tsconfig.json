@@ -18,7 +18,18 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Alias Path */
+     "baseUrl": ".",
+     "paths": {
+       "@/*": ["src/*"], // Optional: Define path alias for cleaner imports
+       "@assets/*": ["./assets/*"],
+       "@components/*": ["./components/*"],
+       "@styles/*": ["./styles/*"],
+       "@utils/*": ["./utils/*"]
+     }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
